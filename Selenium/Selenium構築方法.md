@@ -36,7 +36,6 @@ sudo pip3 install unittest-xml-reporting
 ```
 
 ## 参考URL
----
 
 https://googlechromelabs.github.io/chrome-for-testing/#stable
 
