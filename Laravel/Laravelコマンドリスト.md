@@ -1,11 +1,25 @@
 # Laravelコマンドリスト
 
+## phpのインストール
+
+composerのインストール前にphpをインストールしておく。
+
+```bash
+sudo apt update
+sudo apt install php-cli
+
+# 必要なものもインストールしておく
+ sudo apt-get install php-curl php8.1-xml php-zip unzip
+```
+
 ## Composerのインストール
 
 ```bash
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer; \
 chmod +x /usr/local/bin/composer
+
+composer config -g repos.packagist composer https://packagist.jp
 ```
 
 ## Laravelのインストール
