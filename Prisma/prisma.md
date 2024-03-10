@@ -10,6 +10,7 @@ npx prisma init
 
 # Prismaのマイグレーション
 npx prisma migrate dev
+npx prisma migrate dev --name init
 
 # Prismaクライアントの生成
 npx prisma generate

@@ -9,6 +9,18 @@ npm i -g @nestjs/cli
 nest -v
 ```
 
+## NestJSの構築
+
+```bash
+# NestJSの生成
+nest new backend
+
+# NestJSの起動
+cd backend
+npm install
+npm run start:dev
+```
+
 ## モデルの作成
 
 ```bash
