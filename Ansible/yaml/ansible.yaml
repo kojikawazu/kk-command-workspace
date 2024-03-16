@@ -1,0 +1,147 @@
+- name: Setup nginx server on myserver list(host group)
+  hosts:
+    - devservers
+  become: True
+  roles:
+    - web_server_role
+    - db_server_role
+  tasks:
+    - name: Generate config file
+      template:
+        src: 'tempmodule.conf.j2'
+        dest: '/home/ec2-user/tempmodule.conf'
+      vars:
+        access_log_path: /var/log/tempmodule/access.log
+
+    - name: Create new user
+      user:
+        name: newuser
+        group: users
+        createhome: yes
+        shell: /bin/bash
+
+    - name: Add authorized key for new user
+      authorized_key:
+        user: newuser
+        key: "{{ lookup('file', '~/.ssh/authorized_keys') }}"
+
+    - name: Change user's belonging group
+      user:
+        name: newuser
+        group: adm
+        append: yes
+
+    - name: Delete user
+      user:
+        name: newuser
+        state: absent
+
+    - name: Collect host information
+      setup:
+        gather_subset:
+          - "hardware"
+      register: host_info
+
+    - debug: 
+        var: host_info
+
+    - name: Create directory
+      file: 
+        path: /home/ec2-user/filemodule
+        state: directory
+      register: create_dir
+    
+    - name: Create file
+      file: 
+        path: /home/ec2-user/filemodule/filemodule.txt
+        state: touch
+      when: create_dir.changed
+
+    - name: Read external variable file
+      include_vars: /home/ec2-user/projects/vars.yaml
+
+    - name: Ansible copy dile to remote server
+      copy:
+        src: "/home/ec2-user/projects/index.html"
+        dest: "{{ html_path }}"
+
+    - name: Use custom module
+      custom_module:
+        input_file: '{{ html_path }}/index.html'
+      register: result
+
+    - name: Print result
+      debug:
+        var: result
+
+    - name: Ansible insert line to remote server file
+      lineinfile:
+        path: "{{ html_path }}/index.html"
+        line: "<h1>この行はlineinfileで追加しています</h1>"
+        insertafter: "^<h1>.*$"
+      register: insert_line
+    
+    - name: Print insert status
+      debug:
+        msg: "行追加に成功しました。"
+      when: insert_line.changed
+
+    - name: Ansible change line to remote server file
+      lineinfile:
+        path: "{{ html_path }}/index.html"
+        line: "<h1>この行はlineinfileで変更しています</h1>"
+        regexp: "^<h1>この行はlineinfileで追加しています</h1>$"
+      register: change_line
+    
+    - name: Print change status
+      debug:
+        msg: "行変更に成功しました。"
+      when: change_line.changed
+
+    - name: Ansible delete line to remote server file
+      lineinfile:
+        path: "{{ html_path }}/index.html"
+        state: absent
+        regexp: "^<h1>この行はlineinfileで変更しています</h1>$"
+      register: delete_line
+    
+    - name: Print delete status
+      debug:
+        msg: "行削除に成功しました。"
+      when: delete_line.changed
+
+    - name: Run a script
+      script: script.sh
+
+    - name: Run shell script
+      shell: |
+        cd /usr/share/nginx/html/
+        sudo mkdir -p download-directory
+        cd download-directory
+        sudo touch download-file.txt
+
+    - name: Download download-file.txt
+      get_url:
+        url: "http://localhost/download-directory/download-file.txt"
+        dest: "/home/ec2-user"
+      register: file_download
+
+    - name: Print file download status
+      debug:
+        msg: "ファイルのダウンロードに成功しました。"
+      when: file_download.changed
+
+    - name: Delete file
+      file: 
+        path: /home/ec2-user/filemodule/filemodule.txt
+        state: absent
+      register: file_delete
+
+    - name: Print file delete status
+      debug:
+        msg: "ファイルの削除に成功しました。"
+      when: file_delete.changed
+
+    - name: Reboot
+      reboot:
+        msg: "Rebooting the machine"

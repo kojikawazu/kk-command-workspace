@@ -1,0 +1,20 @@
+# roles/db_server_role/tasks/main.yaml
+- name: Install PostgreSQL
+  yum:
+    name: postgresql15-server
+    state: present
+
+- name: Initialize PostgreSQL database
+  command: postgresql-setup initdb
+
+- name: Start PostgreSQL
+  service:
+    name: postgresql
+    state: started
+    enabled: true
+
+- name: Get PostgreSQL version
+  command: psql --version
+
+- name: Get status of PostgreSQL service
+  command: systemctl status postgresql

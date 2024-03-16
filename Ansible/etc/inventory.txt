@@ -1,0 +1,3 @@
+[ホストグループ名]
+[ホスト名1] ansible_host=[PC1のIPアドレス] ansible_connection=ssh ansible_user=[sshログインユーザー]
+[ホスト名2] ansible_host=[PC2のIPアドレス] ansible_connection=ssh ansible_user=[sshログインユーザー]
