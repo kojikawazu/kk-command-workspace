@@ -19,6 +19,12 @@ export PATH=$PATH:/usr/local/go/bin
 go version
 ```
 
+## モジュールの整理
+
+```bash
+go mod tidy
+```
+
 ## URL
 
 https://go.dev/
