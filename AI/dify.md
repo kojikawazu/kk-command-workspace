@@ -40,6 +40,6 @@ pip install [パッケージ]
 
 # URL
 
-https://zenn.dev/tsuzukia/articles/ba7c90c38e3c2e#0.-dify%E3%82%92%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%A7%E5%BB%BA%E3%81%A6%E3%82%8B
+- [01](https://zenn.dev/tsuzukia/articles/ba7c90c38e3c2e#0.-dify%E3%82%92%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%A7%E5%BB%BA%E3%81%A6%E3%82%8B)
 
-https://note.com/ai_tarou/n/n4899f0058fe5
+- [02](https://note.com/ai_tarou/n/n4899f0058fe5)
