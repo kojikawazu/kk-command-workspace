@@ -1,30 +1,75 @@
 # 生成AI
 
-## Claude
+## AI Agent
 
-[生成AI](https://claude.ai/chats)
+AI agent関係になります。
 
+- [ChatGPT](https://chatgpt.com/)
 
-## Midjourney
+- [Claude](https://claude.ai/chats)
 
-[画像生成AI](https://www.midjourney.com/)のこと
+- [OpenAI](https://platform.openai.com/)
 
-## Genspark
+## Search
 
-[AIを使った検索サイト](https://www.genspark.ai)
+検索をAIを用いて行います。
 
-## v0
+- [Genspark](https://www.genspark.ai)
 
-[フロントエンド側の画面生成](https://v0.dev/chat)
+- [Felo](https://felo.ai/ja/search)
 
-## Create.xyz
+- [Perplexity](https://www.genspark.ai)
 
-[画面生成AI](https://www.create.xyz)
+## Screen generation
 
-## Dify
+画面側のコード生成AIになります。
 
-[チャットボット生成AI](https://cloud.dify.ai/apps)
+- [Create.xyz](https://www.create.xyz)
 
-## Bolt
+- [Lovable](https://lovable.dev/)
 
-[フロント、バックエンドコード生成AI](https://bolt.new)
+## Code generation
+
+全体的なコード生成AIになります。
+
+- [v0](https://v0.dev/chat)
+
+- [Bolt](https://bolt.new)
+
+- [Replit Agent](https://replit.com/)
+
+## 要件定義から生成AI
+
+- [GEAR.indigo](https://gearindigo.app/)
+
+## ワークフローAI
+
+LLMを用いながらワークフローを作成します。
+
+- [Dify](https://cloud.dify.ai/apps)
+
+- [jinbaflow](https://useflow.jinba.ai/)
+
+## 画像生成AI
+
+画像生成します。
+
+- [Midjourney](https://www.midjourney.com/)
+
+- [Recraft](https://www.recraft.ai/)
+
+# 3Dモデル生成AI
+
+- [Ready Player Me](https://readyplayer.me/)
+
+# 3Dアニメーション
+
+- [Mixamo](https://www.mixamo.com/#/)
+
+## Other
+
+- [Canva](https://www.canva.com/ja_jp/)
+
+- [Gamma](https://gamma.app/ja)
+
+- [Napkin](https://www.napkin.ai/)
