@@ -41,8 +41,17 @@ Cargo.tomlに追加したいライブラリを記述する。
 その後ビルドして実行する。
 
 ```toml
+[package]
+name = "backend"
+version = "0.1.0"
+edition = "2021"
+
 [dependencies]
-# ここに追加したいライブラリを記述する
+# フレームワーク
+axum = { version = "0.7", features = ["macros"]}
+
+[dev-dependencies]
+# 開発側
 ```
 
 ## テスト
