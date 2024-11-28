@@ -99,6 +99,19 @@ Laravelについて、まとめた資料をここに置いてます。
 
 - [Laravel](./Laravel/Laravelコマンドリスト.md)
 
+## Rust
+
+Rustについて、まとめた資料をここに置いてます。
+
+- [Rust](./Rust/rust.md)
+
+## Supabase
+
+Supabaseについて、まとめた資料をここに置いてます。
+
+- [RLS](./Supabase/rls.md)
+- [Transaction](./Supabase/transaction.md)
+
 ## MySQL
 
 MySQLについて、まとめた資料を個々に置いてます。
