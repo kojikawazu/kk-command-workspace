@@ -53,6 +53,12 @@ ConoHaについてサーバーを構築した際にまとめた資料をここ�
 
 - [ConoHa](./ConoHa/conoha.md)
 
+## Claude + MCP
+
+Claude Desktop と MCPを掛け合わせた自動化についてまとめた資料を個々に置いてます。
+
+- [ClaudeMCP](./Claude/claude-mcp.md)
+
 ## 設計
 
 - [設計関係は以下を参照すること](./Design/design_main.md)
