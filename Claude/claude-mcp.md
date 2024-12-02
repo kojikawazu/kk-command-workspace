@@ -67,9 +67,9 @@ npm install -g @modelcontextprotocol/server-github
 
 設定値の説明：
 
-- [ユーザー名]: Windowsのユーザー名
-- [トークン]: GitHubの個人アクセストークン（リポジトリアクセス権限必要）
-- [GitHubのアカウント名]: GitHubのユーザー名
+- ユーザー名: Windowsのユーザー名
+- トークン: GitHubの個人アクセストークン（リポジトリアクセス権限必要）
+- GitHubのアカウント名: GitHubのユーザー名
 
 ## 3.4 動作確認
 
