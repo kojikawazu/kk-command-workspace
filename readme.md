@@ -99,6 +99,10 @@ Javaについて、まとめた資料をここに置いてます。
 
 - [Java](./Java/java.md)
 
+Javaバージョンについて、まとめた資料をここに置いてます。
+
+- [Javaバージョン](./Java/java-version-doc.md)
+
 ## Kotlin
 
 Kotlinについて、まとめた資料をここに置いてます。
