@@ -105,6 +105,12 @@ Kotlinについて、まとめた資料をここに置いてます。
 
 - [Kotlin](./Kotlin/kotlin-doc.md)
 
+## Python
+
+Pythonについて、まとめた資料をここに置いてます。
+
+- [Python](./Python/py-doc.md)
+
 ## TypeScript
 
 TypeScriptについて、まとめた資料をここに置いてます。
