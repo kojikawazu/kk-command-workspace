@@ -86,6 +86,7 @@ GitHubについて、よく使う資料をここに置いてます。
 Go言語について、まとめた資料をここに置いてます。
 
 - [Go](./Go/go_main.md)
+- [Go(doc)](./Go/go_doc.md)
 
 ## GraphQL
 
