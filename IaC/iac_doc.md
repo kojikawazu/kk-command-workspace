@@ -1,5 +1,7 @@
 # Terraform を用いた AWS IaC のベストプラクティスと代表的なアーキテクチャ
 
+※ ChatGPTのDeep Search使用。
+
 ## AWSにおける IaC（Infrastructure as Code）のベストプラクティス
 
 Terraformを利用したAWSインフラ構築では、インフラ定義をコードで管理することで一貫性や再現性を高め、変更履歴の追跡やレビューを容易にします​。以下、特にAWS×Terraformを想定したベストプラクティスを解説します。
