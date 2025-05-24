@@ -122,6 +122,10 @@ Pythonについて、まとめた資料をここに置いてます。
 
 - [Python](./Python/py-doc.md)
 
+## PHP/Laravel
+
+PHP/Laravelについて、まとめた資料はここに置いてます。
+
 ## TypeScript
 
 TypeScriptについて、まとめた資料をここに置いてます。
