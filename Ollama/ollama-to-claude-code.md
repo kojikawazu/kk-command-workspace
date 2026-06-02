@@ -1,4 +1,4 @@
-# Ollama + Claude Code セットアップガイド (macOS)# Ollama + Claude Code セットアップガイド (macOS)
+# Ollama + Claude Code セットアップガイド (macOS)
 
 ローカルのオープンモデルでClaude Codeを動かすための手順です。
 
