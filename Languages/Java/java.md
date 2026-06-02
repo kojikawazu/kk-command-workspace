@@ -1,5 +1,3 @@
-
-
 # 参考URL
 
 [Java8からJava11への変更点](https://qiita.com/sivertigo/items/8f61f02f7c84b786697a)
